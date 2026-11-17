@@ -1,0 +1,1114 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>传送门最新地址-可用入口与跳转说明</title>
+<meta name="description" content="传送门最新地址提供可用入口、跳转规则和访问排查方法。整理2026年11月8日前的域名切换记录、镜像站点清单、浏览器兼容问题与常见故障处理，附常见问答和用户反馈汇总。">
+<meta name="keywords" content="传送门最新地址">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23122a4a'/%3E%3Cpath d='M14 32h26M32 18l14 14-14 14' stroke='%23ffd166' stroke-width='6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<style>
+:root{
+  --navy:#122a4a;
+  --navy-2:#1b3a63;
+  --ink:#1d2430;
+  --muted:#5b6779;
+  --line:#d8dee8;
+  --bg:#f5f7fb;
+  --card:#ffffff;
+  --accent:#ffd166;
+  --accent-2:#e2a03f;
+  --teal:#1d7a72;
+  --red:#b8452f;
+  --radius:12px;
+  --radius-s:8px;
+  --shadow:0 1px 2px rgba(18,42,74,.06),0 6px 18px rgba(18,42,74,.07);
+  --shadow-s:0 1px 3px rgba(18,42,74,.08);
+  --font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC",sans-serif;
+  --gap:clamp(14px,2vw,22px);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:128px}
+body{
+  margin:0;font-family:var(--font);color:var(--ink);background:var(--bg);
+  line-height:1.75;font-size:16px;-webkit-text-size-adjust:100%;
+}
+img{max-width:100%;display:block}
+a{color:var(--navy-2);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:700;color:var(--navy)}
+p{margin:0 0 .9em}
+ul,ol{margin:0 0 .9em;padding-left:1.3em}
+li{margin:.25em 0}
+.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(14px,3vw,28px)}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+
+/* 吸顶组 */
+.sticky-top{position:sticky;top:0;z-index:60}
+.notice-bar{
+  background:var(--navy);color:#dce6f5;font-size:13.5px;
+  border-bottom:1px solid rgba(255,255,255,.12);
+}
+.notice-bar .wrap{display:flex;gap:10px;align-items:center;padding-top:7px;padding-bottom:7px;flex-wrap:wrap}
+.notice-bar b{color:var(--accent);font-weight:700}
+.notice-tag{background:rgba(255,209,102,.16);color:var(--accent);border-radius:99px;padding:1px 9px;font-size:12px;white-space:nowrap}
+.notice-bar a{color:#eef3fb;text-decoration:underline;text-underline-offset:2px}
+.site-header{background:rgba(255,255,255,.97);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);box-shadow:var(--shadow-s)}
+.header-inner{display:flex;align-items:center;gap:18px;padding-top:10px;padding-bottom:10px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;min-width:0}
+.brand svg{flex:0 0 auto}
+.brand-text{display:flex;flex-direction:column;line-height:1.15}
+.brand-name{font-size:17.5px;font-weight:800;color:var(--navy);letter-spacing:.3px;white-space:nowrap}
+.brand-sub{font-size:11.5px;color:var(--muted);letter-spacing:.5px}
+.nav-toggle{display:none;margin-left:auto}
+.menu-btn{
+  display:inline-flex;align-items:center;gap:6px;background:#fff;border:1px solid var(--line);
+  border-radius:var(--radius-s);padding:7px 11px;font:inherit;font-size:14px;color:var(--navy);cursor:pointer;
+}
+.menu-btn:focus-visible,.brand:focus-visible,a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible{
+  outline:3px solid var(--accent-2);outline-offset:2px;border-radius:6px;
+}
+.main-nav{display:flex;gap:2px;flex-wrap:wrap;margin-left:auto;align-items:center}
+.main-nav a{
+  font-size:14px;padding:6px 11px;border-radius:99px;color:var(--navy-2);white-space:nowrap;
+}
+.main-nav a:hover{background:#eef2f9;text-decoration:none}
+.main-nav a.is-active{background:var(--navy);color:#fff}
+.header-tools{display:flex;align-items:center;gap:8px}
+.search-wrap{position:relative}
+.search-wrap input{
+  width:150px;border:1px solid var(--line);background:#fff;border-radius:99px;
+  padding:7px 12px;font:inherit;font-size:13.5px;color:var(--ink);
+}
+.search-wrap input:focus{width:200px;transition:width .18s ease}
+.search-feedback{
+  position:absolute;top:calc(100% + 8px);right:0;width:270px;background:#fff;border:1px solid var(--line);
+  border-radius:var(--radius-s);box-shadow:var(--shadow);padding:10px 12px;font-size:13px;color:var(--muted);
+  display:none;z-index:70;
+}
+.search-feedback.show{display:block}
+.search-feedback strong{color:var(--navy)}
+.search-feedback ul{padding-left:1.1em;margin:.4em 0 0}
+.search-feedback a{color:var(--navy-2)}
+
+/* 首屏 */
+.hero{
+  background:
+    radial-gradient(900px 340px at 88% -10%, rgba(255,209,102,.30), transparent 62%),
+    radial-gradient(700px 300px at 10% 110%, rgba(29,122,114,.18), transparent 60%),
+    linear-gradient(160deg,#122a4a 0%,#173763 58%,#1b4570 100%);
+  color:#eaf1fa;overflow:hidden;position:relative;
+}
+.hero-inner{
+  display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(20px,4vw,48px);
+  padding-top:clamp(28px,4.5vw,54px);padding-bottom:clamp(28px,4.5vw,54px);align-items:center;
+}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;letter-spacing:1.2px;color:var(--accent);border:1px solid rgba(255,209,102,.45);padding:3px 12px;border-radius:99px;margin-bottom:16px}
+.hero h1{font-size:clamp(26px,4.6vw,40px);color:#fff;letter-spacing:.5px;margin-bottom:14px}
+.hero-desc{font-size:clamp(14.5px,1.5vw,16.5px);color:#cfdcee;max-width:36em;margin-bottom:20px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px}
+.btn{
+  display:inline-flex;align-items:center;gap:7px;padding:10px 18px;border-radius:99px;font-size:14.5px;
+  font-weight:600;border:1px solid transparent;transition:transform .16s ease,background .16s ease;text-decoration:none;
+}
+.btn-primary{background:var(--accent);color:#2b220a}
+.btn-primary:hover{background:#ffdc8a;text-decoration:none;transform:translateY(-2px)}
+.btn-ghost{border-color:rgba(255,255,255,.4);color:#eaf1fa}
+.btn-ghost:hover{background:rgba(255,255,255,.1);text-decoration:none;transform:translateY(-2px)}
+.hero-stats{display:flex;gap:clamp(14px,3vw,30px);flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.16);padding-top:16px}
+.hero-stat b{display:block;font-size:20px;color:var(--accent);font-weight:800;letter-spacing:.5px}
+.hero-stat span{font-size:12.5px;color:#b9cbe2}
+.hero-visual{position:relative;min-height:230px;display:flex;align-items:center;justify-content:center}
+.hero-visual svg{width:100%;max-width:400px;height:auto;filter:drop-shadow(0 10px 26px rgba(0,0,0,.28))}
+
+/* 布局控制 */
+main{padding-bottom:20px}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 288px;gap:var(--gap);align-items:start;padding-top:clamp(20px,3vw,34px)}
+.content-col{min-width:0;display:flex;flex-direction:column;gap:var(--gap)}
+aside .side-col{display:flex;flex-direction:column;gap:var(--gap);position:sticky;top:132px}
+
+section.block{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-s);
+  padding:clamp(16px,2.4vw,26px);scroll-margin-top:132px;
+}
+.block-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:6px}
+.block-head h2{font-size:clamp(19px,2.2vw,22px)}
+.block-kicker{font-size:12px;color:var(--teal);letter-spacing:1px;font-weight:700;text-transform:uppercase}
+.block-note{font-size:13px;color:var(--muted);margin-bottom:14px}
+.meta-line{font-size:12.5px;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px 14px;margin-bottom:12px}
+.meta-line span{display:inline-flex;align-items:center;gap:5px}
+.dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--accent-2)}
+
+/* 通用 */
+.tag-list{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0}
+.tag-list li{margin:0}
+.tag{
+  display:inline-block;font-size:13px;padding:5px 12px;border-radius:99px;background:#eef2f9;color:var(--navy-2);
+  border:1px solid #e0e7f2;
+}
+.tag:hover{background:var(--navy);color:#fff;text-decoration:none;border-color:var(--navy)}
+.pill-red{background:#fbe9e5;color:var(--red);border-color:#f2d3cb}
+.pill-teal{background:#e4f2f0;color:var(--teal);border-color:#c9e5e1}
+.pill-yellow{background:#fdf3d9;color:#7a5a12;border-color:#f3e3b5}
+
+/* 领域概览 */
+.overview-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:6px}
+.ov-item{border:1px solid var(--line);border-radius:var(--radius-s);padding:12px 13px;background:#fafbfe}
+.ov-item h3{font-size:15px;margin-bottom:4px}
+.ov-item p{font-size:13.5px;color:var(--muted);margin:0}
+
+/* 精选推荐 */
+.card-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.card{
+  border:1px solid var(--line);border-radius:var(--radius-s);overflow:hidden;background:#fff;
+  display:flex;flex-direction:column;transition:transform .16s ease,box-shadow .16s ease;
+}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.card img{width:100%;height:120px;object-fit:cover;background:#e8edf5}
+.card-body{padding:12px 13px 14px;display:flex;flex-direction:column;gap:6px;flex:1}
+.card-body h3{font-size:15.5px}
+.card-body p{font-size:13.5px;color:var(--muted);margin:0}
+.card-foot{font-size:12px;color:var(--muted);display:flex;justify-content:space-between;gap:8px;margin-top:auto;padding-top:6px}
+.badge{font-size:11.5px;border-radius:5px;padding:1px 7px;background:#eef2f9;color:var(--navy-2);white-space:nowrap}
+.badge.new{background:#fbe9e5;color:var(--red)}
+.badge.ok{background:#e4f2f0;color:var(--teal)}
+
+/* 最新更新：时间线 */
+.timeline{list-style:none;padding:0;margin:4px 0 0;border-left:2px solid #e2e9f3;margin-left:6px}
+.timeline li{position:relative;padding:0 0 16px 20px}
+.timeline li:last-child{padding-bottom:0}
+.timeline li::before{
+  content:"";position:absolute;left:-7px;top:7px;width:12px;height:12px;border-radius:50%;
+  background:#fff;border:2.5px solid var(--accent-2);
+}
+.timeline time{font-size:12.5px;color:var(--teal);font-weight:700;letter-spacing:.3px}
+.timeline h3{font-size:15px;margin:2px 0 3px}
+.timeline p{font-size:13.5px;color:var(--muted);margin:0}
+
+/* 分类入口 */
+.cat-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.cat{
+  border:1px solid var(--line);border-radius:var(--radius-s);padding:12px;background:#fafbfe;display:flex;flex-direction:column;gap:3px;
+}
+.cat b{font-size:14.5px;color:var(--navy)}
+.cat span{font-size:12px;color:var(--muted)}
+.cat:hover{background:#fff;border-color:#c3d2e8;text-decoration:none;box-shadow:var(--shadow-s)}
+
+/* 深度解析 */
+.analysis{background:#fff}
+.analysis h3{font-size:17px;margin:20px 0 8px;padding-left:10px;border-left:4px solid var(--accent-2)}
+.analysis h3:first-of-type{margin-top:8px}
+.analysis p{font-size:15px}
+.claim{
+  border:1px solid #e6dcc0;background:#fdf9ee;border-radius:var(--radius-s);padding:12px 14px;margin:12px 0;
+}
+.claim strong{color:#7a5a12}
+.claim p{margin:0;font-size:14px;color:#4a4128}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0}
+.split-panel{border:1px solid var(--line);border-radius:var(--radius-s);padding:12px 13px;background:#fafbfe;font-size:14px}
+.split-panel h4{font-size:14px;margin-bottom:6px}
+.split-panel.fact{background:#f0f7f6;border-color:#cde6e2}
+.split-panel.say{background:#fdf6ec;border-color:#f0e2c8}
+.check-table{width:100%;border-collapse:collapse;font-size:13.8px;margin:10px 0 4px}
+.check-table caption{text-align:left;font-size:13px;color:var(--muted);padding-bottom:6px}
+.check-table th,.check-table td{border:1px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+.check-table th{background:#f0f4fa;color:var(--navy);font-size:13px}
+.check-table td.ok{color:var(--teal);font-weight:600}
+.check-table td.bad{color:var(--red);font-weight:600}
+
+/* 体验指南：编号步骤 */
+.steps{list-style:none;padding:0;margin:6px 0 0;display:grid;gap:10px;counter-reset:step}
+.steps li{
+  display:grid;grid-template-columns:34px minmax(0,1fr);gap:12px;border:1px solid var(--line);
+  border-radius:var(--radius-s);padding:12px 13px;background:#fafbfe;
+}
+.step-num{
+  counter-increment:step;width:34px;height:34px;border-radius:50%;background:var(--navy);color:var(--accent);
+  display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;
+}
+.step-num::before{content:counter(step)}
+.steps h3{font-size:15px;margin-bottom:2px}
+.steps p{font-size:13.5px;color:var(--muted);margin:0}
+
+/* FAQ */
+.faq-list{display:grid;gap:9px;margin-top:6px}
+details.faq{border:1px solid var(--line);border-radius:var(--radius-s);background:#fafbfe;padding:0 13px}
+details.faq[open]{background:#fff;border-color:#c3d2e8;box-shadow:var(--shadow-s)}
+details.faq summary{
+  cursor:pointer;font-weight:600;color:var(--navy);font-size:14.8px;padding:11px 0;list-style:none;
+  display:flex;gap:9px;align-items:flex-start;
+}
+details.faq summary::-webkit-details-marker{display:none}
+details.faq summary::before{
+  content:"＋";color:var(--accent-2);font-weight:800;flex:0 0 auto;
+}
+details.faq[open] summary::before{content:"－"}
+details.faq .faq-body{font-size:14px;color:var(--muted);padding:0 0 12px 22px}
+details.faq .faq-body p{margin:0 0 .6em}
+
+/* 评论 */
+.comment-list{list-style:none;padding:0;margin:6px 0 0;display:grid;gap:10px}
+.comment{border:1px solid var(--line);border-radius:var(--radius-s);padding:12px 13px;background:#fafbfe}
+.comment-head{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:12.5px;color:var(--muted);margin-bottom:5px}
+.comment-head b{color:var(--navy);font-size:13.5px}
+.comment p{font-size:14px;margin:0}
+.comment p strong{color:var(--navy)}
+.avatar{width:26px;height:26px;border-radius:50%;background:var(--navy-2);color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:12px;font-weight:700}
+
+/* 相关资讯 */
+.news-list{list-style:none;padding:0;margin:4px 0 0}
+.news-list li{border-bottom:1px dashed var(--line);padding:10px 0;display:grid;grid-template-columns:auto minmax(0,1fr);gap:12px;align-items:baseline}
+.news-list li:last-child{border-bottom:0}
+.news-list time{font-size:12.5px;color:var(--teal);font-weight:700;white-space:nowrap}
+.news-list h3{font-size:14.8px;display:inline;margin-right:6px}
+.news-list p{font-size:13.2px;color:var(--muted);margin:3px 0 0;grid-column:2}
+
+/* 榜单 */
+.rank-list{list-style:none;padding:0;margin:6px 0 0;counter-reset:rank}
+.rank-list li{
+  display:grid;grid-template-columns:28px minmax(0,1fr) auto;gap:10px;align-items:center;
+  padding:9px 0;border-bottom:1px solid #edf1f7;font-size:14px;
+}
+.rank-list li:last-child{border-bottom:0}
+.rank-list li::before{
+  counter-increment:rank;content:counter(rank);width:24px;height:24px;border-radius:6px;background:#eef2f9;
+  color:var(--navy-2);font-weight:800;font-size:12.5px;display:flex;align-items:center;justify-content:center;
+}
+.rank-list li:nth-child(-n+3)::before{background:var(--accent);color:#2b220a}
+.rank-list b{font-weight:600;color:var(--navy)}
+.rank-list span{font-size:12.5px;color:var(--muted);white-space:nowrap}
+
+/* 侧栏 */
+aside .side-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 16px 18px;box-shadow:var(--shadow-s)}
+aside h2{font-size:15.5px;margin-bottom:9px;display:flex;align-items:center;gap:8px}
+aside h2::before{content:"";width:4px;height:16px;border-radius:2px;background:var(--accent-2)}
+.side-nav{list-style:none;padding:0;margin:0;display:grid;gap:2px}
+.side-nav a{display:block;font-size:13.5px;padding:6px 9px;border-radius:6px;color:var(--navy-2)}
+.side-nav a:hover{background:#eef2f9;text-decoration:none}
+.side-nav a.active{background:var(--navy);color:#fff}
+.side-tip{font-size:13px;color:var(--muted);border-left:3px solid var(--accent);padding-left:9px;margin:0 0 10px}
+.side-note{font-size:12.5px;color:var(--muted);margin:10px 0 0;padding-top:9px;border-top:1px dashed var(--line)}
+.mini-list{list-style:none;padding:0;margin:0;font-size:13.5px}
+.mini-list li{padding:5px 0;border-bottom:1px dashed #edf1f7;display:flex;justify-content:space-between;gap:8px}
+.mini-list li:last-child{border-bottom:0}
+.mini-list span{color:var(--muted);font-size:12.5px;white-space:nowrap}
+
+/* 页脚 */
+footer{background:var(--navy);color:#c6d5e8;margin-top:clamp(26px,4vw,44px);padding:clamp(28px,4vw,44px) 0 22px;font-size:13.8px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:clamp(18px,3vw,34px)}
+.foot-brand{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.foot-brand .brand-name{color:#fff}
+.foot-tagline{color:#9fb5cf;max-width:30em;margin-bottom:12px}
+.foot-col h3{font-size:14px;color:var(--accent);margin-bottom:8px;letter-spacing:.5px}
+.foot-col ul{list-style:none;padding:0;margin:0}
+.foot-col li{margin:.3em 0}
+.foot-col a{color:#c6d5e8;font-size:13.3px}
+.foot-col a:hover{color:#fff}
+.foot-bottom{
+  border-top:1px solid rgba(255,255,255,.14);margin-top:24px;padding-top:14px;display:flex;flex-wrap:wrap;
+  gap:8px 20px;justify-content:space-between;font-size:12.5px;color:#90a7c2;
+}
+.foot-bottom a{color:#b9cbe2}
+
+/* 回到顶部 */
+.to-top{
+  position:fixed;right:18px;bottom:22px;width:44px;height:44px;border-radius:50%;border:1px solid rgba(18,42,74,.15);
+  background:#fff;color:var(--navy);font-size:18px;display:flex;align-items:center;justify-content:center;
+  box-shadow:var(--shadow);cursor:pointer;opacity:0;visibility:hidden;transform:translateY(8px);
+  transition:opacity .2s ease,transform .2s ease,visibility .2s;z-index:80;
+}
+.to-top.show{opacity:1;visibility:visible;transform:none}
+.to-top:hover{background:var(--accent)}
+
+/* 响应式 */
+@media (max-width:1000px){
+  .layout{grid-template-columns:minmax(0,1fr)}
+  aside .side-col{position:static}
+  .hero-inner{grid-template-columns:minmax(0,1fr)}
+  .hero-visual{order:-1;min-height:150px;justify-content:flex-start}
+  .hero-visual svg{max-width:270px}
+}
+@media (max-width:820px){
+  .main-nav{
+    display:none;order:5;width:100%;margin-left:0;flex-direction:column;align-items:stretch;
+    border-top:1px solid var(--line);padding-top:8px;margin-top:4px;
+  }
+  .main-nav.open{display:flex}
+  .main-nav a{padding:9px 12px;border-radius:8px;font-size:14.5px}
+  .nav-toggle{display:block}
+  .header-tools{order:4;margin-left:auto}
+  .search-wrap input{width:130px}
+  .search-wrap input:focus{width:150px}
+  .overview-grid{grid-template-columns:1fr 1fr}
+  .card-grid{grid-template-columns:1fr 1fr}
+  .cat-grid{grid-template-columns:1fr 1fr}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:560px){
+  .overview-grid,.card-grid,.cat-grid,.split{grid-template-columns:1fr}
+  .header-inner{gap:10px}
+  .search-wrap input{width:104px}
+  .search-wrap input:focus{width:128px}
+  .search-feedback{width:min(270px,calc(100vw - 40px));right:-6px}
+  .hero-stats{gap:16px}
+  .foot-grid{grid-template-columns:1fr}
+  .news-list li{grid-template-columns:1fr;gap:2px}
+  .news-list p{grid-column:1}
+  .to-top{right:12px;bottom:14px;width:40px;height:40px}
+  .brand-name{font-size:16px}
+  .brand-sub{font-size:11px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+  .card:hover,.btn:hover{transform:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="sticky-top">
+  <div class="notice-bar" role="region" aria-label="站点更新公告">
+    <div class="wrap">
+      <span class="notice-tag">公告</span>
+      <span><b>传送门最新地址</b> 于 2026年11月8日 02:10 完成主域名切换：<span style="color:#fff">pm-gate7.net</span> 取代 10 月 21 日启用的 pm-gate6.net，旧域名保留 301 跳转至11月15日。</span>
+      <a href="/#updates">查看切换记录</a>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="/#top" aria-label="传送门最新地址 首页">
+        <svg width="38" height="38" viewBox="0 0 64 64" role="img" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#122a4a"/>
+          <path d="M13 32h25" stroke="#ffd166" stroke-width="6" stroke-linecap="round"/>
+          <path d="M28 19l13 13-13 13" stroke="#ffd166" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="50" cy="32" r="4" fill="#1d7a72"/>
+        </svg>
+        <span class="brand-text">
+          <span class="brand-name">传送门最新地址</span>
+          <span class="brand-sub">入口记录 · 跳转排查</span>
+        </span>
+      </a>
+      <button class="menu-btn nav-toggle" id="menuBtn" aria-expanded="false" aria-controls="mainNav">
+        <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        菜单
+      </button>
+      <nav class="main-nav" id="mainNav" aria-label="主题导航">
+        <a href="/#overview">入口概览</a>
+        <a href="/#featured">精选入口</a>
+        <a href="/#updates">更新记录</a>
+        <a href="/#channels">分类频道</a>
+        <a href="/#analysis">深度解析</a>
+        <a href="/#guide">使用指南</a>
+        <a href="/#faq">常见问答</a>
+        <a href="/#comments">用户反馈</a>
+      </nav>
+      <div class="header-tools">
+        <div class="search-wrap">
+          <label for="siteSearch" class="sr-only">站内查找入口条目</label>
+          <input id="siteSearch" type="search" placeholder="查找域名/条目" autocomplete="off">
+          <div class="search-feedback" id="searchFeedback" role="status" aria-live="polite"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main id="top">
+  <section class="hero" aria-labelledby="heroTitle">
+    <div class="wrap hero-inner">
+      <div>
+        <span class="hero-eyebrow">2026-11-08 可用性核对</span>
+        <h1 id="heroTitle">传送门最新地址</h1>
+        <p class="hero-desc">把域名切换、镜像线路、DNS 生效与浏览器拦截问题放在一张表里核对。页面按“当前主站—备用镜像—旧域名跳转”三层记录，每条入口标注启用时间和验证结果，方便在打不开时快速定位是线路、缓存还是域名本身的问题。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="/#featured">查看当前可用入口
+            <svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="btn btn-ghost" href="/#guide">跳转失败排查步骤</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat"><b>3</b><span>当前可用线路</span></div>
+          <div class="hero-stat"><b>2</b><span>已归档旧域名</span></div>
+          <div class="hero-stat"><b>18天</b><span>最近一次主域切换间隔</span></div>
+          <div class="hero-stat"><b>11月8日</b><span>核对时间</span></div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <svg viewBox="0 0 400 300" role="img">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#ffd166"/><stop offset="1" stop-color="#e2a03f"/>
+            </linearGradient>
+            <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#4a7bb5"/><stop offset="1" stop-color="#1b3a63"/>
+            </linearGradient>
+          </defs>
+          <ellipse cx="200" cy="262" rx="150" ry="16" fill="rgba(0,0,0,.22)"/>
+          <rect x="52" y="70" width="296" height="164" rx="14" fill="url(#g2)" stroke="rgba(255,255,255,.18)"/>
+          <rect x="52" y="70" width="296" height="28" rx="14" fill="rgba(255,255,255,.10)"/>
+          <circle cx="72" cy="84" r="4" fill="#ffd166"/><circle cx="86" cy="84" r="4" fill="#1d7a72"/><circle cx="100" cy="84" r="4" fill="#c6d5e8"/>
+          <text x="76" y="130" font-family="monospace" font-size="17" fill="#eaf1fa">pm-gate7.net</text>
+          <text x="76" y="158" font-family="monospace" font-size="13" fill="#9fb5cf">主站 · 2026-11-08 启用</text>
+          <rect x="76" y="176" width="150" height="8" rx="4" fill="rgba(255,255,255,.16)"/>
+          <rect x="76" y="176" width="104" height="8" rx="4" fill="url(#g1)"/>
+          <text x="76" y="212" font-family="monospace" font-size="11" fill="#9fb5cf">镜像1 cm-gate9.net / 镜像2 hk-gate3.net</text>
+          <path d="M268 148h46" stroke="#ffd166" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 7"/>
+          <path d="M306 136l14 12-14 12" stroke="#ffd166" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="330" cy="80" r="20" fill="url(#g1)" opacity=".9"/>
+          <path d="M324 80l5 5 9-10" stroke="#122a4a" stroke-width="3.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap layout">
+    <div class="content-col">
+
+      <section class="block" id="overview" aria-labelledby="overviewTitle">
+        <div class="block-head">
+          <span class="block-kicker">Domain Map</span>
+          <h2 id="overviewTitle">入口概览：域名、镜像与跳转三层结构</h2>
+        </div>
+        <p class="block-note">按访问顺序区分三层，打不开时先判断卡在哪一层，再决定换域名还是清缓存。</p>
+        <div class="overview-grid">
+          <div class="ov-item">
+            <h3>主域名 pm-gate7.net</h3>
+            <p>11月8日02:10起解析生效，A 记录指向 45.76.xx.xx，TLS 证书有效期至 2027-05-20。</p>
+          </div>
+          <div class="ov-item">
+            <h3>备用镜像 cm-gate9.net</h3>
+            <p>10月24日上线，与主站共用账号体系，登录态不通用，需重新输入一次凭证。</p>
+          </div>
+          <div class="ov-item">
+            <h3>备用镜像 hk-gate3.net</h3>
+            <p>移动网络优先线路，10月30日切换 CDN 服务商，晚高峰丢包率从 4.1% 降至 1.3%。</p>
+          </div>
+          <div class="ov-item">
+            <h3>旧域名 pm-gate6.net</h3>
+            <p>保留 301 跳转，11月15日24:00 关闭。10月21日至11月8日期间作为主站使用。</p>
+          </div>
+          <div class="ov-item">
+            <h3>发布页 status-pm.pages.dev</h3>
+            <p>只发布域名变更文字通知，不承载登录与内容功能，第三方托管，信息有约 15 分钟延迟。</p>
+          </div>
+          <div class="ov-item">
+            <h3>邮件通知通道</h3>
+            <p>订阅用户会在切换前 6 小时收到标题为“域名切换”的邮件，发件域名 gate-mail.net。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="block" id="featured" aria-labelledby="featuredTitle">
+        <div class="block-head">
+          <span class="block-kicker">Picks</span>
+          <h2 id="featuredTitle">精选入口与本周可核对条目</h2>
+        </div>
+        <p class="block-note">以下条目在 11月8日 09:30 用三地节点（上海电信、广州联通、香港移动）各测一次，结果写在卡片里。</p>
+        <div class="card-grid">
+          <article class="card">
+            <img src="https://picsum.photos/seed/pmgate7main/480/240" width="480" height="240" loading="lazy" alt="主域名访问状态页截图样式的示意图" style="object-fit:cover">
+            <div class="card-body">
+              <h3>pm-gate7.net 主站入口</h3>
+              <p>三地全部 200，平均首字节 218ms。页面底部版本号 v2026.11.08 可用于确认不是缓存旧页。</p>
+              <div class="card-foot"><span class="badge ok">可用</span><span>11-08 09:30 测</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https://picsum.photos/seed/cmgate9mirror/480/240" width="480" height="240" loading="lazy" alt="镜像线路状态对比示意图" style="object-fit:cover">
+            <div class="card-body">
+              <h3>cm-gate9.net 联通镜像</h3>
+              <p>广州联通实测 176ms，上海电信 402ms。电信用户不建议作为首选，移动端表现稳定。</p>
+              <div class="card-foot"><span class="badge">可用·分区</span><span>11-08 09:30 测</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https://picsum.photos/seed/hkgate3cdn/480/240" width="480" height="240" loading="lazy" alt="香港线路延迟分布示意图" style="object-fit:cover">
+            <div class="card-body">
+              <h3>hk-gate3.net 香港线路</h3>
+              <p>19:00—22:30 延迟波动最小，10月30日换 CDN 后 95 分位延迟从 610ms 降到 240ms。</p>
+              <div class="card-foot"><span class="badge ok">可用</span><span>11-07 21:00 测</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="block" id="updates" aria-labelledby="updatesTitle">
+        <div class="block-head">
+          <span class="block-kicker">Changelog</span>
+          <h2 id="updatesTitle">最新更新：11月8日前后域名变更记录</h2>
+        </div>
+        <ol class="timeline">
+          <li>
+            <time datetime="2026-11-08">2026年11月8日 02:10</time>
+            <h3>主域名切至 pm-gate7.net</h3>
+            <p>DNS 解析在 02:10 生效，02:40 完成证书签发。旧域名 pm-gate6.net 同日 03:00 起 301 跳转，跳转目标带 /go 路径以保留来源统计。</p>
+          </li>
+          <li>
+            <time datetime="2026-11-06">2026年11月6日 16:20</time>
+            <h3>hk-gate3.net 增加备用证书</h3>
+            <p>因原证书链在部分安卓 8 设备上提示不受信任，追加 Let's Encrypt 交叉签名证书，覆盖 Android 7.0 及以上。</p>
+          </li>
+          <li>
+            <time datetime="2026-11-03">2026年11月3日 10:45</time>
+            <h3>发布页增加切换倒计时</h3>
+            <p>status-pm.pages.dev 顶部新增倒计时组件，显示到旧域名关闭还剩几天几小时；该页由 Cloudflare Pages 托管。</p>
+          </li>
+          <li>
+            <time datetime="2026-10-30">2026年10月30日 23:50</time>
+            <h3>香港线路更换 CDN 服务商</h3>
+            <p>由 A 服务商切换为 B 服务商，更换后 11月1日至7日平均丢包 1.3%，更换前一周均值 4.1%。</p>
+          </li>
+          <li>
+            <time datetime="2026-10-24">2026年10月24日 08:30</time>
+            <h3>cm-gate9.net 镜像上线</h3>
+            <p>面向联通与移动用户，独立登录态，内容与主站同步延迟约 90 秒，评论区发帖需在主站完成。</p>
+          </li>
+          <li>
+            <time datetime="2026-10-21">2026年10月21日 01:15</time>
+            <h3>上一轮主域名切换</h3>
+            <p>pm-gate5.net 停用，pm-gate6.net 启用。本轮相隔 18 天，是过去半年内最短的一次主域更替间隔。</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="block" id="channels" aria-labelledby="channelsTitle">
+        <div class="block-head">
+          <span class="block-kicker">Channels</span>
+          <h2 id="channelsTitle">分类入口：按问题类型找对应频道</h2>
+        </div>
+        <p class="block-note">入口列表按“用户最先遇到什么”排序，不是按域名编号排序。</p>
+        <div class="cat-grid">
+          <a class="cat" href="/#guide"><b>域名打不开排查</b><span>DNS / 缓存 / 证书</span></a>
+          <a class="cat" href="/#analysis"><b>镜像与主站差异</b><span>账号、内容、同步延迟</span></a>
+          <a class="cat" href="/#updates"><b>历史域名归档</b><span>gate5 至 gate7 时间线</span></a>
+          <a class="cat" href="/#faq"><b>跳转循环问题</b><span>301 叠加与浏览器差异</span></a>
+          <a class="cat" href="/#guide"><b>手机端访问设置</b><span>安卓、iOS、鸿蒙</span></a>
+          <a class="cat" href="/#comments"><b>线路延迟反馈</b><span>分运营商实测</span></a>
+          <a class="cat" href="/#rank"><b>可用线路排序</b><span>11月8日测速榜</span></a>
+          <a class="cat" href="/#faq"><b>邮件通知订阅</b><span>发件域名与收信设置</span></a>
+        </div>
+      </section>
+
+      <section class="block analysis" id="analysis" aria-labelledby="analysisTitle">
+        <div class="block-head">
+          <span class="block-kicker">Analysis</span>
+          <h2 id="analysisTitle">深度解析：18天换一次主域，问题不全在域名本身</h2>
+        </div>
+        <p class="block-note">以下判断都给出可核对的日期、数字或原文措辞，读者可以拿自己的访问记录来反驳。</p>
+
+        <h3>一、换域频率变高与 CDN 切换是两件事，时间对不上</h3>
+        <p>10月21日到11月8日，主域从 gate5 到 gate6 再到 gate7，间隔从 9 月前的约 40 天压缩到 18 天。有人把原因归到 10月30日香港线路换 CDN，但换 CDN 发生在 gate6 启用之后、gate7 启用之前，且换的是 hk-gate3.net 这个镜像，主域解析服务商未变。时间顺序上，先有 10月21日的主域更替，后有 10月30日的 CDN 切换，把后者当作换域原因站不住。</p>
+        <div class="split">
+          <div class="split-panel fact">
+            <h4>可核对事实</h4>
+            <p>10-21 01:15 gate6 启用；10-30 23:50 香港镜像换 CDN；11-08 02:10 gate7 启用。三次操作由不同值班人执行，公告栏均留下时间戳。</p>
+          </div>
+          <div class="split-panel say">
+            <h4>仅见转述</h4>
+            <p>“因为 CDN 被墙才换域名”的说法出现在两个电报群，无公告支撑；发布页 11月1日 只写了“线路优化”，未提及域名。</p>
+          </div>
+        </div>
+
+        <h3>二、301 跳转叠加是“越跳越慢”的主因，换域名只是表象</h3>
+        <p>11月8日至9日，访问 pm-gate5.net 的用户实际经历三级跳转：gate5 → gate6 → gate7。用 curl 跟踪链路，北京节点实测三级跳转总耗时 1.9 秒，直接访问 gate7 为 0.21 秒。gate5 的跳转规则由 10月21日旧配置遗留，未在 gate7 上线时清理。11月9日 11:00 起，gate5 改为直接跳 gate7，实测耗时降到 0.6 秒。旧域名清理不是一次动作，而是逐个改配置。</p>
+        <table class="check-table">
+          <caption>11月9日 北京电信节点，访问旧域名跳转层数核对</caption>
+          <thead><tr><th>来源域名</th><th>跳转层数</th><th>总耗时</th><th>结果</th></tr></thead>
+          <tbody>
+            <tr><td>pm-gate5.net（改前）</td><td>3 层</td><td>1.9s</td><td class="bad">慢</td></tr>
+            <tr><td>pm-gate5.net（改后）</td><td>1 层</td><td>0.6s</td><td class="ok">恢复</td></tr>
+            <tr><td>pm-gate6.net</td><td>1 层</td><td>0.5s</td><td class="ok">正常</td></tr>
+            <tr><td>pm-gate7.net 直连</td><td>0 层</td><td>0.21s</td><td class="ok">最快</td></tr>
+          </tbody>
+        </table>
+
+        <h3>三、镜像“登录态不通用”是设计选择，不是故障</h3>
+        <p>cm-gate9.net 与主站共用账号库，但 session 存于各域 Cookie 域下，跨域不共享。10月24日上线公告原文写“需重新登录一次”，11月5日仍有用户按主站登录态去镜像操作，误判为掉线。内容同步延迟约 90 秒，来自镜像每 90 秒拉一次主站内容接口，这个数字在 11月2日 的运维日志里可以查到。把这两点当作“镜像坏了”，会让排查方向跑偏到账号系统上。</p>
+        <div class="claim">
+          <strong>可反驳的判断：</strong>
+          <p>镜像的价值在“能连上”，不在“体验等同主站”。如果用户主要在镜像发帖和评论，cm-gate9.net 目前不支持，评论区发帖仍需回主站，这是功能缺失而非线路问题。</p>
+        </div>
+
+        <h3>四、判断“地址是否最新”，要看三个信号而不是看域名编号</h3>
+        <p>gate 后面的数字大，不等于一定最新。10月21日曾出现 gate7 镜像先于主域启用的短暂错位，编号顺序被打破过一次。真正可核对的信号是：发布页文字通知的时间戳、页面底部版本号前缀（v2026.11.08）、以及邮件通知里的切换时刻。三者一致时，域名可信度最高。只有单个信号时，建议以页面版本号为准，因为它与内容发布绑定，最难伪造同时更新。</p>
+      </section>
+
+      <section class="block" id="guide" aria-labelledby="guideTitle">
+        <div class="block-head">
+          <span class="block-kicker">Checklist</span>
+          <h2 id="guideTitle">体验指南：打不开时的五步排查</h2>
+        </div>
+        <ol class="steps">
+          <li>
+            <div class="step-num"></div>
+            <div>
+              <h3>先看页面版本号，再看域名</h3>
+              <p>能打开但内容旧，多半是缓存。主站底部版本号为 v2026.11.08；如果显示 v2026.10.21，说明仍在 gate6 缓存页，需要强制刷新（桌面 Ctrl+F5，iOS 在设置里清除 Safari 缓存）。</p>
+            </div>
+          </li>
+          <li>
+            <div class="step-num"></div>
+            <div>
+              <h3>用另一个运营商网络试一次</h3>
+              <p>11月8日 09:30 三地测试中，cm-gate9.net 在上海电信耗时 402ms、广州联通 176ms。同一域名跨运营商差异超过 2 倍时，优先切换镜像而非反复刷新。</p>
+            </div>
+          </li>
+          <li>
+            <div class="step-num"></div>
+            <div>
+              <h3>检查跳转层数是否超过一层</h3>
+              <p>浏览器地址栏连续变化两次以上，说明遇到 301 叠加。在地址栏直接输入 pm-gate7.net 绕过旧域名，可以同时排除跳转与缓存两个问题。</p>
+            </div>
+          </li>
+          <li>
+            <div class="step-num"></div>
+            <div>
+              <h3>确认证书是否指向当前域名</h3>
+              <p>11月6日为 hk-gate3.net 追加交叉签名证书后，安卓 7.0 以上不再提示不受信任。证书信息里的域名与地址栏不一致，通常是 DNS 尚未刷新，等待 10 至 30 分钟再试。</p>
+            </div>
+          </li>
+          <li>
+            <div class="step-num"></div>
+            <div>
+              <h3>最后才考虑换镜像登录</h3>
+              <p>镜像与主站登录态不通用，切换后需要重新输入凭证。若只是内容加载慢，先换网络环境，换镜像放在最后一步，避免重复登录。</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="block" id="faq" aria-labelledby="faqTitle">
+        <div class="block-head">
+          <span class="block-kicker">FAQ</span>
+          <h2 id="faqTitle">常见问答：域名、跳转与登录</h2>
+        </div>
+        <div class="faq-list">
+          <details class="faq">
+            <summary>pm-gate7.net 和 pm-gate6.net 是同一个站吗？</summary>
+            <div class="faq-body"><p>是同一内容的两个发布阶段。gate6 在 10月21日至11月8日期间作为主站，11月8日 03:00 起改为 301 跳转至 gate7，跳转保留到 11月15日 24:00。账号、内容、评论均连续，不需要重新注册。</p></div>
+          </details>
+          <details class="faq">
+            <summary>镜像站点登录后提示“会话失效”怎么办？</summary>
+            <div class="faq-body"><p>镜像与主站 Cookie 域不同，登录态不共享属于正常现象。在 cm-gate9.net 或 hk-gate3.net 上重新输入一次凭证即可。若连续三次失败，检查是否在浏览器里禁用了第三方 Cookie，部分安卓浏览器默认限制跨站 Cookie。</p></div>
+          </details>
+          <details class="faq">
+            <summary>为什么访问旧地址会连续跳转两次？</summary>
+            <div class="faq-body"><p>gate5 的旧跳转规则未在 gate7 上线时同步清理，形成 gate5 → gate6 → gate7 的三级链路。11月9日 11:00 起 gate5 已改为直接跳 gate7。仍有两级跳转时，多为本地 DNS 缓存未过期。</p></div>
+          </details>
+          <details class="faq">
+            <summary>发布页显示的时间和实际切换时间差多少？</summary>
+            <div class="faq-body"><p>status-pm.pages.dev 由第三方托管，信息发布有约 15 分钟延迟。11月8日主站切换在 02:10 生效，发布页文字通知的时间戳为 02:26。核对时以页面底部版本号为准，发布时间只作参考。</p></div>
+          </details>
+          <details class="faq">
+            <summary>邮件通知没收到，可能卡在哪一步？</summary>
+            <div class="faq-body"><p>通知发件域名为 gate-mail.net，标题固定为“域名切换”。未收到时依次检查：订阅邮箱是否填错、垃圾邮件目录、发件域名是否被企业邮箱拦截。11月3日 起通知会附倒计时链接，可在发布页手动核对。</p></div>
+          </details>
+          <details class="faq">
+            <summary>手机端一直转圈，桌面端正常，是什么原因？</summary>
+            <div class="faq-body"><p>常见于移动网络对 hk-gate3.net 的线路调度。11月7日 21:00 测试中，香港线路晚高峰 95 分位延迟 240ms，但个别地区移动网络仍会落到较慢节点。切换到 cm-gate9.net 或将 DNS 改为 223.5.5.5 后重试，多数情况可恢复。</p></div>
+          </details>
+        </div>
+      </section>
+
+      <section class="block" id="comments" aria-labelledby="commentsTitle">
+        <div class="block-head">
+          <span class="block-kicker">Feedback</span>
+          <h2 id="commentsTitle">用户评论：线路、跳转与登录的真实反馈</h2>
+        </div>
+        <ul class="comment-list">
+          <li class="comment">
+            <div class="comment-head"><span class="avatar">林</span><b>林方舟</b><time datetime="2026-11-08">11月8日 10:12</time><span class="badge ok">已核对</span></div>
+            <p>早上按公告换了 <strong>pm-gate7.net</strong>，上海电信 200ms 左右，页面版本号 v2026.11.08 对得上。gate6 的跳转也正常，没有出现多跳。</p>
+          </li>
+          <li class="comment">
+            <div class="comment-head"><span class="avatar">阿</span><b>阿岚</b><time datetime="2026-11-09">11月9日 11:40</time></div>
+            <p>昨天从收藏夹点 gate5 进去转了快两秒才到，今天再试快多了。<strong>虽然官方说 11月9日11:00 改好了，但我这边 12 点才生效</strong>，估计是本地 DNS 没到期。</p>
+          </li>
+          <li class="comment">
+            <div class="comment-head"><span class="avatar">周</span><b>周工</b><time datetime="2026-11-07">11月7日 22:05</time></div>
+            <p>hk-gate3.net 换 CDN 之后晚高峰确实稳，昨晚 21 点测 240ms，上个月经常 600ms 以上。<strong>但白天反而比 cm-gate9.net 慢</strong>，两条线路差异挺明显。</p>
+          </li>
+          <li class="comment">
+            <div class="comment-head"><span class="avatar">K</span><b>Kite</b><time datetime="2026-11-06">11月6日 18:31</time></div>
+            <p>镜像登录要重新输一次凭证，公告 10月24日就写了，还是有人以为是掉线。<strong>客服回复也挺慢</strong>，不过问题本身不算大。</p>
+          </li>
+          <li class="comment">
+            <div class="comment-head"><span class="avatar">陈</span><b>陈默</b><time datetime="2026-11-05">11月5日 09:18</time></div>
+            <p>发帖在镜像上点了没反应，后来才知道评论和发帖只在主站能用。<strong>现在都直接去 pm-gate7.net 了</strong>，镜像只当备用打开看看。</p>
+          </li>
+          <li class="comment">
+            <div class="comment-head"><span class="avatar">赵</span><b>赵一诚</b><time datetime="2026-11-04">11月4日 20:47</time></div>
+            <p>倒计时组件做得还行，发布页能看到还剩 11 天。<strong>不过时间是第三方页面转的，跟实际关闭时间差了十几分钟</strong>，这种细节能接受但别当准确时间用。</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="block" id="news" aria-labelledby="newsTitle">
+        <div class="block-head">
+          <span class="block-kicker">News</span>
+          <h2 id="newsTitle">相关资讯：线路、证书与发布渠道</h2>
+        </div>
+        <ul class="news-list">
+          <li>
+            <time datetime="2026-11-08">11-08</time>
+            <div style="min-width:0">
+              <h3>主域切换完成，gate6 进入 7 天跳转期</h3>
+              <p>gate7 于 02:10 解析生效，gate6 保留跳转至 11月15日。页面底部版本号同步更新为 v2026.11.08。</p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2026-11-06">11-06</time>
+            <div style="min-width:0">
+              <h3>hk-gate3.net 追加交叉签名证书</h3>
+              <p>覆盖安卓 7.0 及以上设备，解决部分机型提示证书不受信任的问题，现有会话不受影响。</p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2026-11-03">11-03</time>
+            <div style="min-width:0">
+              <h3>发布页新增切换倒计时与文字通知</h3>
+              <p>status-pm.pages.dev 顶部新增倒计时，托管的第三方页面保留约 15 分钟信息延迟。</p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2026-10-30">10-30</time>
+            <div style="min-width:0">
+              <h3>香港线路更换 CDN，晚高峰延迟下降</h3>
+              <p>更换后一周 95 分位延迟 240ms，更换前一周约 610ms，丢包率从 4.1% 降至 1.3%。</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="block" id="rank" aria-labelledby="rankTitle">
+        <div class="block-head">
+          <span class="block-kicker">Ranking</span>
+          <h2 id="rankTitle">11月8日可用线路测速榜</h2>
+        </div>
+        <p class="block-note">排序依据为三地节点首字节时间中位数，测试时间为 09:30，同一网络环境多次测量取中位数。</p>
+        <ol class="rank-list">
+          <li><b>pm-gate7.net</b><span>中位 218ms</span></li>
+          <li><b>hk-gate3.net</b><span>中位 246ms</span></li>
+          <li><b>cm-gate9.net</b><span>中位 288ms</span></li>
+          <li><b>pm-gate6.net（301）</b><span>中位 512ms</span></li>
+          <li><b>pm-gate5.net（改后）</b><span>中位 596ms</span></li>
+        </ol>
+        <p style="font-size:13px;color:var(--muted);margin-top:10px">注：gate6 与 gate5 因含跳转层，耗时天然高于直连；榜单只用于比较相对快慢，不作可用性判断。</p>
+      </section>
+
+      <section class="block" id="related" aria-labelledby="relatedTitle">
+        <div class="block-head">
+          <span class="block-kicker">Tags</span>
+          <h2 id="relatedTitle">相关推荐与检索标签</h2>
+        </div>
+        <ul class="tag-list">
+          <li><a class="tag" href="/#updates">传送门最新地址变更记录</a></li>
+          <li><a class="tag" href="/#guide">传送门打不开怎么排查</a></li>
+          <li><a class="tag" href="/#channels">传送门镜像登录教程</a></li>
+          <li><a class="tag" href="/#faq">旧域名301跳转是什么</a></li>
+          <li><a class="tag" href="/#rank">传送门香港线路速度</a></li>
+          <li><a class="tag" href="/#faq">镜像与主站登录态差异</a></li>
+          <li><a class="tag" href="/#comments">移动网络访问延迟反馈</a></li>
+          <li><a class="tag" href="/#news">传送门证书信任问题</a></li>
+        </ul>
+      </section>
+
+      <section class="block" id="timeline-note" aria-labelledby="noteTitle">
+        <div class="block-head">
+          <span class="block-kicker">Note</span>
+          <h2 id="noteTitle">补充：版本号与可信度分层</h2>
+        </div>
+        <table class="check-table">
+          <caption>入口信息可信度分层（按可核对程度从高到低）</caption>
+          <thead><tr><th>信息层</th><th>来源</th><th>可核对方式</th></tr></thead>
+          <tbody>
+            <tr><td>页面版本号</td><td>主站页面底部</td><td class="ok">与内容发布绑定，最难伪造</td></tr>
+            <tr><td>发布页文字通知</td><td>status-pm.pages.dev</td><td class="ok">有时间戳，约 15 分钟延迟</td></tr>
+            <tr><td>邮件通知</td><td>gate-mail.net</td><td class="ok">切换前 6 小时发出</td></tr>
+            <tr><td>群聊转述</td><td>第三方群组</td><td class="bad">无时间戳，需二次核对</td></tr>
+          </tbody>
+        </table>
+        <p style="font-size:14px;margin-top:12px">判断入口是否可信，优先看页面版本号；发布页和邮件用于确认时间窗口；群聊转述只作为线索，不作为依据。这一分层在 11月8日 的切换中验证过一次：当时群聊里传的 gate8 并不存在，页面版本号仍显示 v2026.11.08。</p>
+      </section>
+
+    </div>
+
+    <aside aria-label="侧栏导航与工具">
+      <div class="side-col">
+        <div class="side-card">
+          <h2>页面导航</h2>
+          <ul class="side-nav" id="sideNav">
+            <li><a href="/#overview">入口概览</a></li>
+            <li><a href="/#featured">精选入口</a></li>
+            <li><a href="/#updates">更新记录</a></li>
+            <li><a href="/#channels">分类频道</a></li>
+            <li><a href="/#analysis">深度解析</a></li>
+            <li><a href="/#guide">体验指南</a></li>
+            <li><a href="/#faq">常见问答</a></li>
+            <li><a href="/#comments">用户评论</a></li>
+            <li><a href="/#news">相关资讯</a></li>
+            <li><a href="/#rank">线路测速榜</a></li>
+          </ul>
+          <p class="side-note">滚动时自动高亮当前板块，点击可跳转。</p>
+        </div>
+        <div class="side-card">
+          <h2>当前主站</h2>
+          <p class="side-tip">11月8日 02:10 起生效，页面版本号 v2026.11.08。</p>
+          <ul class="mini-list">
+            <li><span>主域名</span><b>pm-gate7.net</b></li>
+            <li><span>联通镜像</span><b>cm-gate9.net</b></li>
+            <li><span>香港线路</span><b>hk-gate3.net</b></li>
+            <li><span>旧域名跳转</span><b>至11-15</b></li>
+          </ul>
+          <p class="side-note">域名只用于说明结构与排查顺序，具体访问以发布页文字通知为准。</p>
+        </div>
+        <div class="side-card">
+          <h2>常用问答</h2>
+          <ul class="mini-list">
+            <li><a href="/#faq">镜像会话失效</a><span>重新登录</span></li>
+            <li><a href="/#faq">连续跳转两次</a><span>清 DNS</span></li>
+            <li><a href="/#guide">页面版本号旧</a><span>强刷</span></li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer id="siteFooter">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <svg width="32" height="32" viewBox="0 0 64 64" role="img" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#ffd166"/>
+            <path d="M13 32h25" stroke="#122a4a" stroke-width="6" stroke-linecap="round"/>
+            <path d="M28 19l13 13-13 13" stroke="#122a4a" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="brand-name" style="color:#fff;font-weight:800;font-size:16.5px">传送门最新地址</span>
+        </div>
+        <p class="foot-tagline">记录域名切换、镜像线路和跳转变化，把“打不开”拆成可以逐项核对的问题。</p>
+        <p style="color:#8fa6c1;font-size:12.5px;margin:0">内容更新时间：2026-11-08 10:20，对应正文“更新记录”板块的 gate7 启用与 gate6 跳转条目。</p>
+      </div>
+      <div class="foot-col">
+        <h3>入口</h3>
+        <ul>
+          <li><a href="/#overview">入口概览</a></li>
+          <li><a href="/#featured">精选入口</a></li>
+          <li><a href="/#rank">线路测速榜</a></li>
+          <li><a href="/#updates">更新记录</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h3>帮助</h3>
+        <ul>
+          <li><a href="/#guide">体验指南</a></li>
+          <li><a href="/#faq">常见问答</a></li>
+          <li><a href="/#channels">分类频道</a></li>
+          <li><a href="/#timeline-note">可信度分层</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h3>互动</h3>
+        <ul>
+          <li><a href="/#comments">用户评论</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+          <li><a href="/#related">相关推荐</a></li>
+          <li><a href="/#analysis">深度解析</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>示例数据说明：页面中的域名、时间、测速数字为演示用示例条目，用于说明判断方法，不构成实际访问指引。</span>
+      <span>© 2026 传送门最新地址 · 内容整理与排查记录</span>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" type="button" aria-label="回到页面顶部">
+  <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<script>
+(function(){
+  "use strict";
+
+  /* 移动端菜单 */
+  var menuBtn = document.getElementById('menuBtn');
+  var mainNav = document.getElementById('mainNav');
+  if(menuBtn && mainNav){
+    menuBtn.addEventListener('click', function(){
+      var open = mainNav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    mainNav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A' && window.matchMedia('(max-width: 820px)').matches){
+        mainNav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  /* 回到顶部 */
+  var toTop = document.getElementById('toTop');
+  var onScroll = function(){
+    if(window.scrollY > 420){ toTop.classList.add('show'); }
+    else{ toTop.classList.remove('show'); }
+  };
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+  toTop.addEventListener('click', function(){
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({top:0, behavior: reduce ? 'auto' : 'smooth'});
+  });
+
+  /* 侧栏滚动高亮 */
+  var sideLinks = Array.prototype.slice.call(document.querySelectorAll('#sideNav a'));
+  var sections = sideLinks.map(function(a){
+    var id = a.getAttribute('href').split('#')[1];
+    return document.getElementById(id);
+  }).filter(Boolean);
+
+  var highlight = function(){
+    var pos = window.scrollY + 160;
+    var current = null;
+    sections.forEach(function(sec){
+      if(sec.offsetTop <= pos){ current = sec.id; }
+    });
+    sideLinks.forEach(function(a){
+      var id = a.getAttribute('href').split('#')[1];
+      if(id === current){ a.classList.add('active'); }
+      else{ a.classList.remove('active'); }
+    });
+  };
+  window.addEventListener('scroll', highlight, {passive:true});
+  window.addEventListener('resize', highlight);
+  highlight();
+
+  /* 本地搜索 */
+  var input = document.getElementById('siteSearch');
+  var feedback = document.getElementById('searchFeedback');
+  var index = [
+    {t:'入口概览', k:'域名 镜像 跳转 A记录 证书 邮件通知', id:'overview'},
+    {t:'精选入口', k:'pm-gate7.net 主站 cm-gate9.net hk-gate3.net 测速', id:'featured'},
+    {t:'更新记录', k:'11月8日 主域名切换 301 倒计时 CDN 证书', id:'updates'},
+    {t:'分类频道', k:'打不开排查 镜像差异 历史归档 跳转循环 手机访问 延迟反馈 邮件订阅', id:'channels'},
+    {t:'深度解析', k:'18天换域 301跳转叠加 登录态 版本号 可信度', id:'analysis'},
+    {t:'体验指南', k:'缓存 运营商 跳转层数 证书 镜像登录', id:'guide'},
+    {t:'常见问答', k:'pm-gate7 gate6 会话失效 连续跳转 发布页延迟 邮件通知 手机转圈', id:'faq'},
+    {t:'用户评论', k:'上海电信 广州联通 香港线路 镜像登录 发帖 倒计时', id:'comments'},
+    {t:'相关资讯', k:'证书 交叉签名 倒计时 香港线路 CDN', id:'news'},
+    {t:'线路测速榜', k:'中位延迟 218ms 246ms 288ms 596ms', id:'rank'},
+    {t:'相关推荐', k:'标签 变更记录 排查 镜像教程 301跳转 香港线路', id:'related'},
+    {t:'版本号与可信度', k:'版本号 v2026.11.08 发布页 邮件通知 群聊转述', id:'timeline-note'}
+  ];
+
+  function escapeHtml(s){
+    return s.replace(/[&<>"']/g, function(c){
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+    });
+  }
+
+  function doSearch(){
+    var q = (input.value || '').trim().toLowerCase();
+    if(!q){
+      feedback.classList.remove('show');
+      feedback.innerHTML = '';
+      return;
+    }
+    var hits = index.filter(function(item){
+      return item.t.toLowerCase().indexOf(q) > -1 || item.k.toLowerCase().indexOf(q) > -1;
+    });
+    feedback.classList.add('show');
+    if(hits.length === 0){
+      feedback.innerHTML = '没有找到与 <strong>' + escapeHtml(input.value.trim()) + '</strong> 相关的条目。<br>可以试试“301”“镜像”“版本号”或具体域名。';
+      return;
+    }
+    var html = '<div>找到 ' + hits.length + ' 个相关板块：</div><ul>';
+    hits.slice(0,6).forEach(function(item){
+      html += '<li><a href="/#' + item.id + '">' + escapeHtml(item.t) + '</a></li>';
+    });
+    html += '</ul>';
+    feedback.innerHTML = html;
+  }
+
+  if(input && feedback){
+    input.addEventListener('input', doSearch);
+    input.addEventListener('focus', function(){ if(input.value.trim()) doSearch(); });
+    document.addEventListener('click', function(e){
+      if(!e.target.closest('.search-wrap')) feedback.classList.remove('show');
+    });
+    feedback.addEventListener('click', function(e){
+      if(e.target.tagName === 'A') feedback.classList.remove('show');
+    });
+  }
+
+  /* 平滑滚动：为吸顶预留偏移（原生 scroll-padding 之外再兜底一次） */
+  document.addEventListener('click', function(e){
+    var a = e.target.closest('a[href^="/#"]');
+    if(!a) return;
+    var id = a.getAttribute('href').slice(2);
+    if(!id) return;
+    var target = document.getElementById(id);
+    if(!target) return;
+    e.preventDefault();
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var top = target.getBoundingClientRect().top + window.scrollY - 128;
+    window.scrollTo({top: top, behavior: reduce ? 'auto' : 'smooth'});
+    if(history.replaceState){ history.replaceState(null, '', '/#' + id); }
+    if(mainNav && window.matchMedia('(max-width: 820px)').matches){
+      mainNav.classList.remove('open');
+      if(menuBtn) menuBtn.setAttribute('aria-expanded','false');
+    }
+  });
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"WebSite",
+      "name":"传送门最新地址",
+      "alternateName":"传送门最新地址入口记录",
+      "inLanguage":"zh-CN",
+      "description":"记录域名切换、镜像线路与跳转排查方法的示例站点。"
+    },
+    {
+      "@type":"FAQPage",
+      "mainEntity":[
+        {
+          "@type":"Question",
+          "name":"pm-gate7.net 和 pm-gate6.net 是同一个站吗？",
+          "acceptedAnswer":{"@type":"Answer","text":"是同一内容的两个发布阶段。gate6 在10月21日至11月8日期间作为主站，11月8日03:00起改为301跳转至gate7，跳转保留到11月15日24:00。账号、内容、评论均连续，不需要重新注册。"}
+        },
+        {
+          "@type":"Question",
+          "name":"镜像站点登录后提示会话失效怎么办？",
+          "acceptedAnswer":{"@type":"Answer","text":"镜像与主站 Cookie 域不同，登录态不共享属于正常现象。在 cm-gate9.net 或 hk-gate3.net 上重新输入一次凭证即可。连续三次失败时检查浏览器是否限制第三方 Cookie。"}
+        },
+        {
+          "@type":"Question",
+          "name":"为什么访问旧地址会连续跳转两次？",
+          "acceptedAnswer":{"@type":"Answer","text":"gate5 的旧跳转规则未在 gate7 上线时同步清理，形成三级链路。11月9日11:00起 gate5 已改为直接跳 gate7，仍有两级跳转时多为本地 DNS 缓存未过期。"}
+        },
+        {
+          "@type":"Question",
+          "name":"发布页显示的时间和实际切换时间差多少？",
+          "acceptedAnswer":{"@type":"Answer","text":"status-pm.pages.dev 由第三方托管，信息发布有约15分钟延迟。11月8日主站切换在02:10生效，发布页文字通知时间戳为02:26。核对时以页面底部版本号为准。"}
+        },
+        {
+          "@type":"Question",
+          "name":"邮件通知没收到，可能卡在哪一步？",
+          "acceptedAnswer":{"@type":"Answer","text":"通知发件域名为 gate-mail.net，标题固定为域名切换。未收到时依次检查订阅邮箱是否填错、垃圾邮件目录、企业邮箱是否拦截发件域名。"}
+        }
+      ]
+    }
+  ]
+}
+</script>
+</body>
+          </html>
